@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show Page</title>
+</head>
+<style>
+    h1 {
+        color: blue;
+    }
+</style>
+
+<body>
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <span><a href="/belt">Home</a></span>
+        <span> | </span>
+        <span><a href="/log_out">Logout</a></span>
+        <p>Users who added this product/item under their wish_list</p>
+        <ul>
+        {%for product in products%}
+        <li>Item : {{product.item}}</li>
+        <li>Creator: {{product.creator.first_name}}</li>
+        {%endfor%}  
+        </ul>
+       

@@ -1,0 +1,31 @@
+* {
+    margin: 10px 10px;
+    padding: 0px;
+}
+
+#content {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(200px, auto));
+    background-color: lightblue;
+    border: 2px solid green;
+}
+
+img {
+    margin: 0px 10px;
+    width: 220px;
+}
+
+body {
+    background-color: white;
+}
+
+button {
+    padding: 30px;
+    color: wheat;
+    background-color: green;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 25px;
+}

@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+#wrapper{
+    width:970px;
+    height:970px;
+    margin:10px;
+    outline: 2px solid green;   
+} 
+.header{
+    width:970px;
+    margin:5px;
+    outline: 2px solid yellow; 
+    background-color: #265174; 
+}
+.header-input{
+    display: block; 
+    padding:5px;  
+    margin-left: 733px;
+}
+.header-input p{
+    color: white;
+    display: inline-block;
+}
+.header-input a{
+    color:yellow;
+}
+.header img{
+    width:300px;
+    margin-bottom: 30px;
+    display:inline-block;
+    margin-right: 340px;
+    vertical-align: top;
+    height:84px;
+}
+.button{
+    width:280px;
+    display:inline-block;
+    background-color:	#444444;
+    padding:15px;
+    vertical-align: top;
+    border-radius:20px;
+    height: 42px;
+}
+.button1{
+    display:inline-block;
+    padding:10px;
+    width: 200px;
+    margin-left:30px;
+}
+.button2{
+    display: inline-block;
+    padding:10px;
+}
+.navigation-bar{
+    margin-left: 86px;
+    list-style-type: none;
+    vertical-align: top;
+    background-color:#4A81A8;
+    width:853px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.navigation-bar li{
+    display: inline-block;
+    padding: 14px;
+    margin-left: 22px;
+    font-size: 22px;
+    color:white;
+}
+span{
+    color: #809378;
+    margin-left: 60px;
+}
+.references li {
+    list-style-type: none;
+    text-align: center;
+    color:#9EC0D7;
+    vertical-align: top;
+    margin-right: 50px;
+}
+a{
+    color:#9EC0D7;
+}
+.references{
+    vertical-align: top;
+    display: inline-block;
+}
+.about-python {
+display:inline-block;
+vertical-align: top;
+}
+
+p2{
+    display: block;
+    text-align: center;
+    width:680px;
+    font-size: 20px;
+    vertical-align: top;
+}
+p3{
+    text-align:center;
+    display: block;
+    font-size:25px;
+    color:yellow;
+}
+h3{
+    color:black;
+    text-align: center;
+    vertical-align:top;
+    width: 400x;
+}
+.main-contents{
+    background-color: white;
+    display:inline-block;
+    width: 970px;
+    vertical-align: top;
+}
+.sub-contents{
+    display: inline-block;
+    width:400px;
+    text-align: center;
+    margin-left: 80px;
+}
+p4{
+width:400px;
+display: block;
+color:black;
+}
+.subcontents li{
+color: blue;
+width: 400px;
+margin-left: 80px;
+}
+.footer li{
+    display: inline-block;
+    padding:25px;
+    text-align: center;
+    margin-left:50px;
+    font-size: 20px;
+}
+p5{
+    text-align: center;
+    display: block;
+}

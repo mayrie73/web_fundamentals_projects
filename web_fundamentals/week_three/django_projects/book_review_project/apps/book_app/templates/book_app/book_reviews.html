@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Reviews</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'book_app/style.css' %}" />
+</head>
+<style>
+button{
+        background-color:lightcoral;
+        border-radius:10px;
+    }
+</style>
+<body>
+    <div id="wrapper">
+    <form action = "/book/create" method ="post">
+            {% csrf_token %} 
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                    {% endfor %}
+            </ul>
+            {% endif %}
+        <div class="left">
+        <p>{{book.title}}</p>
+        <p>Author:{{book.author}}</p>
+        <p>Reviews:{{book.reviews}}</p>
+        </div>
+        <div class="right">
+            <span><a href="/">Home</a></span>
+            <span> |</span>
+            <span><a href="/log_out"> Log Out</a></span> <br><br>
+            <label for= "review">Add a Review:</label><br>
+            <textarea name="review" id="review"></textarea><br>
+            <label for = "rating">Rating:</label>
+            <input type="number" name="rating" min="1" max="5">
+            <span>Stars</span>
+            <br><br>
+            <input type =submit value ="Submit Review"><br><br>
+            <button><a href="/book/delete">Delete this review</a></button>
+              
+        </div>
+    </form>
+    </div>
+    
+</body>
+</html>

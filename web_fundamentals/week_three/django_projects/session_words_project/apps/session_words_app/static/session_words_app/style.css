@@ -1,0 +1,26 @@
+#wrapper{
+    margin: 20px auto;
+    padding: 20px;
+    height: 1000px;
+    width: 1000px;
+    background-color: grey;
+    text-align: center;
+}
+
+#left{
+    height:850px;
+    margin:20px;
+    padding:20px;
+    vertical-align: top;
+    background-color:palevioletred;
+    width: 350px;
+    display: inline-block;
+}
+#right{
+    margin:20px;
+    padding:20px;
+    height: 850px;
+    width: 350px;
+    background-color: lightpink;
+    display: inline-block;
+}

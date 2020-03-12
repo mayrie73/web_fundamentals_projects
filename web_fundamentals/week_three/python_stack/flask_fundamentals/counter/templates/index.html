@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counter</title>
+</head>
+<style>
+    h1{
+        color: rgb(7, 80, 7);
+    }
+    h2{
+        color: rgb(8, 72, 8)
+    }
+    a{
+        color: yellowgreen;
+    }
+    body{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Home Page</h1>
+    <h1> Number of Page Views: {{session['page_view']}} times</h1>
+    <h2> Welcome!</h2>
+    <a href='/reload'>Click to refresh page</a><br>
+    <a href="/reset">Click to reset counter</a>
+</body>
+</html>

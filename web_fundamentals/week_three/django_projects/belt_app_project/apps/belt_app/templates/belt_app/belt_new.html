@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form for Creating a New Item </title>
+</head>
+
+<body>
+    <span><a href="/belt">Home</a></span>
+    <span> | </span>
+    <span><a href="/log_out">Logout</a></span>
+    <h2>Create a New Wish List Item</h2>
+    <form action="/belt/belt_create" method="post">
+        {% csrf_token %}
+        <label for="item">Product Item</label>
+        <input type="text" name="item">
+        <br>
+        <br>
+        <input type="submit" name="Add">
+    </form>
+</body>
+
+</html>

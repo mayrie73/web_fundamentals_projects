@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index Route</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'belt_app/style.css' %}" />
+</head>
+
+<body>
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <h1>Welcome, {{user.first_name}} {{user.last_name}}</h1>
+
+    <table border=1>
+        <thead>
+            <h1> Your Wish List</h1>
+            <tr>
+                <th>Item</th>
+                <th>Added by</th>
+                <th>Date Added </th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td><a href="/belt/belt_show/{{product.id}}">{{product.item}}</a></td>
+
+                <td> {{product.creator.first_name}}</td>
+                <td> {{time}}</td>
+                <td>
+                <a href="/belt/belt_remove/{{product.id}}">Remove</a>
+                </td>
+            </tr> 
+            {%endfor%}
+
+        </tbody>
+    </table>
+
+    <table border=1>
+        <thead>
+            <h1> Other Users WishList</h1>
+            <tr>
+                <th>Item</th>
+                <th>Added by</th>
+                <th>Date Added </th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td><a href="/belt/belt_show/{{product.id}}">{{product.item}}</a></td>
+
+                <td> {{product.creator.first_name}}</td>
+                <td> {{time}}</td>
+                <td>
+                <a href="/belt/belt_remove/{{product.id}}">Remove</a>
+                </td>
+            </tr>
+            
+            {%endfor%}
+
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <a href="/belt/belt_new">Add a New Product Item</a>
+</body>
+
+</html>

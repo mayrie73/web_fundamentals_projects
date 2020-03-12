@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form for Creating a New User </title>
+</head>
+
+<body>
+    <h2>Here is a form to create a new user</h2>
+    <form action="/create" method="post">
+        {% csrf_token %}
+        <label for="first_name">First Name:</label>
+        <br>
+        <input type="text" name="first_name">
+        <br>
+        <label for="last_name">Last Name:</label>
+        <br>
+        <input type="text" name="last_name">
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" name="email">
+        <br>
+        <label for="age">Age:</label>
+        <br>
+        <input type="number" name="age">
+        <br>
+        <label for="created_at">Created at:</label>
+        <br>
+        <input type="datetime-local" name="created_at">
+        <br>
+        <label for="updated_at">Updated at:</label>
+        <br>
+        <input type="datetime-local" name="updated_at">
+        <br>
+        <input type="submit" name="submit">
+    </form>
+</body>
+
+</html>

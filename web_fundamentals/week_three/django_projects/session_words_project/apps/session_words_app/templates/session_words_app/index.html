@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Session words</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'session_words_app/style.css' %}" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="left">
+            <form action="/process" method="POST">
+                {% csrf_token %}
+                <label for="word">Add a New Word</label>
+                <input type="text" name="word" value="word">
+                <br>
+                <label for="color">Choose Color</label>
+                <br>
+                <input type="radio" name="color" value="red"> Red
+                <br>
+                <input type="radio" name="color" value="green"> Green
+                <br>
+                <input type="radio" name="color" value="blue"> Blue
+                <br>
+                <br>
+                <input type="checkbox" name="font" value="bold"> Show in BIG FONTS!
+                <br>
+                <br>
+                <input type="submit" value="Add to Sessions">
+            </form>
+        </div>
+        <div id="right">
+            <a href="/refresh"><button>Clear Session</button></a><br><br>     
+            {%for i in request.session.queue%}
+            {%if i.font%}
+            <span style="color: {{i.color}}">{{i.word}}</span>
+            {%else%}
+            <span style="color: {{i.color}}">{{i.word}}</span>
+            {%endif%}
+            <span> posted at {{i.time}}</span><br>
+            {%endfor%}
+               
+            <br>
+        </div>
+    </div>
+
+</body>
+
+</html>

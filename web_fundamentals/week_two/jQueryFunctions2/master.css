@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    margin: 20px 500px;
+    Width: 1500px;
+    background-color: pink;
+    border: 4px solid green;
+    align-content: center;
+}
+
+p1 p2 p3 p4 p5{
+    display: inline-block;
+    background-color: white;
+    width: 200px;
+    border: 2px solid black;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+button1{
+    padding: 20px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 60px;
+    background-color: white;
+    border: 4px solid black;
+}
+button2 {
+    padding: 20px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 60px;
+    background-color: white;
+    border: 4px solid black;
+}
+button3 {
+    padding: 20px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 60px;
+    background-color: white;
+    border: 4px solid black;
+}
+button4{
+    padding: 20px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 60px;
+    background-color: white;
+    border: 4px solid black;
+}
+button5{
+    padding: 20px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 60px;
+    background-color: white;
+    border: 4px solid black;
+}
+button6{
+    padding: 20px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 60px;
+    background-color: white;
+    border: 4px solid black;
+}
+button7{
+    padding: 20px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 60px;
+    background-color: white;
+    border: 4px solid black;
+}
+button8{
+    padding: 20px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 60px;
+    background-color: white;
+    border: 4px solid black;
+}
+p {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header {
+    display: inline-block;
+    background-color: grey;
+    width: 1500px;
+    border: 2px solid black;
+    padding: 20px 0px;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.headerInput p {
+    display: inline-block;
+    margin: 6px;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.headerInput input {
+    margin: 7px;
+}
+
+.before{
+    border: 2px solid black;
+    width: 1500px;
+    padding:100px 0px;
+
+}
+
+.html {
+    border: 2px solid black;
+    width: 1500px;
+    padding:100px 0px;
+
+}
+.after {
+    border: 2px solid black;
+    width: 1500px;
+    padding:100px 0px;
+}
+.attr{
+    border: 2px solid black;
+    width: 1500px;
+    padding:100px 0px;
+}
+.val {
+    border: 2px solid black;
+    width: 1500px;
+    padding: 100px 0px;
+}
+.text {
+    border: 2px solid black;
+    width: 1500px;
+    padding: 100px 0px;
+}
+.data{
+    border: 2px solid black;
+    width: 1500px;
+    padding: 100px 0px;
+}
+.red{
+    color:red;
+}
+
+.html img{
+    height:150px;
+    Width:150px;
+}
+.attr img{
+    height:150px;
+}
+

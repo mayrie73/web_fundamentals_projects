@@ -1,0 +1,220 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.wrapper{
+    margin:100px;
+    width:1000px;
+}
+.header{
+    width: 1000px;
+    background-color: white;
+}
+.header h1{
+    color:grey;
+    display: inline-block;
+    vertical-align: top;
+    margin:60px 10px 0px 10px;
+}
+.header h2{
+    display: block;
+    padding: 10px;
+    background-color:	#3E679D;
+    color: white;
+    width: 980px;
+}
+.header img{
+    height:100px;
+    Width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.navBar{
+    width:300px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.navBarHeader p{
+    width: 300px;
+    margin:5px;
+}
+p3{
+    color: gray;
+    padding:2px;
+    margin: 40px;
+    width: 200px;
+}
+span{
+    color:red;
+}
+span1{
+    color: 	#3E679D;
+}
+span2{
+    color:	#09B8D8;
+}
+span3{
+    color:aqua;
+    font-size: 25px;
+    display:inline-block;
+}
+.navBarHeader button1 {
+color: white;
+background-color:	#3E679D;
+width:200px;
+text-align: center;
+margin:5px 40px;
+display: block;
+border-radius: 10px;
+padding:8px;
+}
+.navBarHeader button2 {
+    color: white;
+    text-align: center;
+    background-color:#FEB72B;
+    width:200px;
+    margin: 5px 40px; 
+    display: block;
+    border-radius: 10px;
+    padding:8px;
+    }
+.navBarMainContents{
+    width: 300px;
+}
+.navBarMainContents{
+    width:300px;
+}
+.navBarMainContents{
+    background-image: url("img/ad_background.png");
+    margin:20px 0px;
+    padding:20px 0px;
+}
+.navBarMainContents p{
+    color:white;
+    font-size: 35px;
+    text-align: center;
+    margin:15px;
+    display: block;
+ 
+}
+.navBarMainContents img{
+    height:150px;
+    width:150px;
+    display: block;
+    margin-left: 75px;
+}
+.navBarMainContents button3{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 20px 40px;
+    width:200px;
+    padding: 8px;
+    display:block;
+}
+.mainContents{
+    background-color: white;
+    width:688px;
+    display:inline-block;
+    
+}
+#mainContentsHeader1{
+    display:inline-block;
+    vertical-align: top;
+}
+#mainContentsHeader1 img{
+    height:20px;
+    width:20px;
+    display:inline-block;
+    vertical-align: top;
+    margin:5px;
+}
+#mainContentsHeader1 p{
+    color:#3E679D;
+    display: inline-block;
+    font-size: 20px;
+    margin-top:5px;
+    margin-right:333px;
+}
+.mainContentsHeader img{
+    height:40px;
+    width:40px;
+    display:inline-block;
+    vertical-align: top;
+    margin:15px;
+}
+.mainContentsHeader2{
+    display:inline-block;
+    vertical-align: top;
+    
+}
+.mainContentsHeader2 p4{
+    color:grey;
+    display:block;
+}
+.mainContents p6{
+    color: gray;
+    margin: 20px;   
+    width: 400px; 
+}
+.mainContentsBody{
+   width:688px;
+}
+.mainContentsBody ul{
+ margin-left:40px;
+}
+
+h3{
+    margin-left: 20px;
+    color:	#3E679D;
+    
+}
+.mainContentsBody p{
+    margin-left:20px;
+}
+.mainContentsBody img{
+    width:400px;
+    height: 150px;
+    margin-left: 150px;
+}
+.mainContentsBody ol{
+    margin-left: 40px;
+}
+.mainContentsBody h3{
+    margin:10px;
+}
+#mainContentsFooter{
+    width:660px;
+    display: inline-block;
+    border: blue 4px solid;
+    margin: 20px 0px 20px 20px;
+}
+#mainContentsFooterBody{
+    display: inline-block;
+}
+#mainContentsFooter img{
+    display:inline-block;
+    height:200px;
+    width:200px;
+    vertical-align: top;
+}
+#mainContentsFooterBody h3{
+    display: block; 
+    margin:8px;
+    Width:300px;
+}
+#mainContentsFooter p{
+    display:block;
+    width:420px;
+    margin:8px;
+   
+}
+a{
+    color:#09B8D8;
+    display: inline-block;
+}

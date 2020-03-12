@@ -1,0 +1,33 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    color:#fff;
+    font-family:"Nunito Semibold";
+    text-align: center;
+}
+#content{
+    margin:20px;
+    display:grid;
+    /*grid-column-gap: 10px;
+    grid-row-gap: 10px;*/
+    grid-gap:10px;
+    /*grid-template-columns: 33.3% 33.3% 33.3%;*/
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(200px, auto));
+    /*grid-template-rows: repeat(3, 200px);*/
+    /*grid-template-rows: 200px 300px 400px 200px;*/
+    /*grid-auto-rows: minmax(200px,auto);*/
+    border: 2px dotted red;
+    max-width: 960px;
+    margin:0 auto;
+}
+#content div{
+    background-color:#3bbced;
+    padding:30px;
+}
+#content div:nth-child(even){
+    background:#777;
+}

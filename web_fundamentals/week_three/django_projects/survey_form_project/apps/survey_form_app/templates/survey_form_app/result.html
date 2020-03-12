@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Results</title>
+</head>
+<style>
+    a {
+        padding: 5px;
+        background-color: aqua;
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <table border=1>
+        <thead>
+            <tr>
+                <h1>Survey Form</h1>
+                <p>This form has been submitted {{request.session.count}} times</p>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Language</th>
+                <th>Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>{{request.session.name}}</th>
+                <th>{{request.session.location}}</th>
+                <th>{{request.session.language}}</th>
+                <th>{{request.session.comment}}</th>
+            </tr>
+        </tbody>
+    </table> <br><br>
+    <a href="/">Go Back</a>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Courses</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'courses_app/style.css' %}" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id=add>
+            <form action="/create" method="post">
+                {% csrf_token %} 
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li>{{ message }}</li>
+                        {% endfor %}
+                </ul>
+                {% endif %}
+               
+                Name:
+                <input type="text" name="name" id="name">
+                <br>
+                <br>
+                <span>Description:</span>
+                <textarea name="description" id="description" ></textarea>
+                <br>
+                <br>
+                <input type="submit" value="submit">
+                <br>
+                <br>
+            </form>
+        </div>
+        <div id="show">
+        <h1>Welcome {{user.first_name}} {{user.last_name}} </h1>
+            <table border=1>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Date Added</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <h1>Welcome {{user.first_name}} {{user.last_name}} </h1>
+                    {% for course in courses %}
+                    <tr>
+                        <td>{{course.name}}</td>
+                        <td>{{course.description}}</td>
+                        <td>{{course.date_added}}</td>
+                        <td>
+                            <a href="/remove/{{course.id}}">Remove</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

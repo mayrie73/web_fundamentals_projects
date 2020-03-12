@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h2> Complete Registration form </h2>
+    {% with messages =get_flashed_messages() %} {% if messages %} {% for message in messages %}
+    <p style="color:red">{{message}} </p>
+    {% endfor %} {% endif %} {% endwith %}
+
+    <form action=/success method="POST">
+        First Name:<input type="text" name="first_name"><br>
+        Last Name:<input type="text" name="last_name"><br>
+        Email:<input type="text" name="email"><br>
+        Password:<input type="password" name="password"><br>
+        Confirm Password:<input type="text" name="password_confirm"><br>
+        <input type="submit" name="submit" value="Register">
+    </form>
+
+</body>
+
+</html>

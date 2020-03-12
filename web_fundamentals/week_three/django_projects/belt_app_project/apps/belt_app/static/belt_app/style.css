@@ -1,0 +1,9 @@
+h1{
+    color:purple;
+}
+button{
+    color:red;
+    padding:10px;
+    border: 5px solid yellow;
+    border-radius:10px;
+}

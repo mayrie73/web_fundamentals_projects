@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'book_app/style.css' %}" />
+</head>
+<style>
+
+</style>
+
+<body>
+    <div id="wrapper">
+        <div class="left">
+            {% if messages %}
+            <ul>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        
+            <h3>Welcome {{user.first_name}} {{user.last_name}}</h3>
+            <p>Recent Book Reviews:</p>
+            <p>{{author.name}}</p>
+            {%for book in books%}
+            <p>{{book.title}}</p>
+            {%endfor%}
+            <p>{{review.review}}</p>
+            <p>{{review.rating}}</p>
+
+        </div>
+        <div class=right>
+            <span>
+                <a href="/book/book_add">Add Book and Review</a>
+            </span>
+            <span> |</span>
+            <span>
+                <a href="/log_out"> Log Out</a>
+            </span>
+            <br>
+            <br>
+            <p>Other Books with Reviews:</p>
+            <ul>
+                <li>List of Books that have been reviewed</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

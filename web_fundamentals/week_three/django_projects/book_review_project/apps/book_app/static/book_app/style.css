@@ -1,0 +1,22 @@
+h1{
+    color: blue;
+}
+#wrapper{
+    width:1000px;
+    height:1000px;
+}
+.left{
+    width:450px;
+    display:inline-block;
+    vertical-align:top;
+    margin:20px;
+    padding:20px;
+
+}
+.right{
+    width:300px;
+    display:inline-block;
+    margin:20px;
+    padding:20px;
+
+}

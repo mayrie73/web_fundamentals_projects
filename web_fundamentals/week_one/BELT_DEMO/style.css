@@ -1,0 +1,47 @@
+/* * {
+    border: 1px solid green;
+} */
+.container {
+    width: 1000px;
+}
+.header {
+    background-color: blue;
+}
+.header h1 {
+    color: white;
+    margin: 0px 300px 0px 30px;
+    padding: 20px 0px 10px 0px;
+    display: inline-block;
+}
+.header-input {
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+}
+.header-input a {
+    color: yellow;
+    display: block;
+}
+.main-content {
+    /* background-color: grey; */
+}
+.connect, .sign-up {
+    display: inline-block;
+}
+.connect {
+    width: 400px;
+    margin-left: 30px;
+}
+.sign-up {
+    width: 300px;
+    vertical-align: top;
+}
+.connect ul {
+    list-style-type: none;
+}
+.connect p {
+    display: inline-block;
+}
+.connect span {
+    font-weight: bold;
+}
